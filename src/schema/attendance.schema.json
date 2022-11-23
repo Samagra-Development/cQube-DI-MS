@@ -1,0 +1,55 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://cqube.samagra.io/attendance.schema.json",
+    "type": "object",
+    "default": {},
+    "title": "Attendance Metric Schema",
+    "required": [
+        "id",
+        "schoolId",
+        "grade",
+        "count"
+    ],
+    "properties": {
+        "id": {
+            "title": "The id Schema",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "schoolId": {
+            "title": "The schoolId Schema",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "grade": {
+            "title": "The grade Schema",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+                2
+            ]
+        },
+        "count": {
+            "title": "The count Schema",
+            "type": "integer",
+            "default": 0,
+            "examples": [
+                10
+            ]
+        }
+    },
+    "examples": [
+        {
+            "id": 1,
+            "schoolId": 1,
+            "grade": 2,
+            "count": 10
+        }
+    ]
+}
